@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "id.rentist.rentist"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 30
+        versionName "1.2.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.hbb20:ccp:2.0.2'
+    compile 'com.iarcuschin:simpleratingbar:0.1.5'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.an.customfontview:customfont:0.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:support-v4:26.0.0'
+    compile 'com.android.support:support-vector-drawable:26.0.0'
+    compile 'com.google.android.gms:play-services:11.6.0'
+    compile 'com.google.android.gms:play-services-places:11.6.0'
+    compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.simsun.scra:library:0.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+    compile 'com.bignerdranch.android:expandablerecyclerview:1.0.3'
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'com.synnapps:carouselview:0.1.4'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-core:11.6.0'
+    compile 'com.google.firebase:firebase-messaging:11.6.0'
+    compile 'com.google.firebase:firebase-database:11.6.0'
+    compile 'com.google.firebase:firebase-auth:11.6.0'
+    compile 'com.firebase:firebase-client-android:2.5.2'
+    compile 'com.aldoapps:autoformatedittext:0.9.3'
+    compile 'com.github.jrvansuita:PickImage:+'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.felixsoares:BottomNavygation:1.8.6'
+    compile 'com.savvi.datepicker:rangepicker:1.0.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+
+    compile 'com.google.android.gms:play-services-auth:11.6.0'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.iammert:ExpandableLayout:1.4.1'
+    compile 'com.savvi.datepicker:rangepicker:1.2.0'
+    compile 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    compile 'com.wang.avi:library:2.1.3'
+}
+
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.jakewharton.butterknife'
+
