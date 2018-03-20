@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:background="#fff">
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinbold.otf"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canclelation Policy"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorBlack87"
+            android:id="@+id/title_value"
+
+
+
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lorem ipsup dolor si amte  yoyo  gogo tromilo gusun behavior when backup son as posible "
+            android:textSize="12dp"
+            android:textColor="@color/colorBlack54"
+            android:id="@+id/sub_value"
+
+
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

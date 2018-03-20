@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.V2CategoryMain"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/bg_grad"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spn_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:entries="@array/city"/>
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--android:src="@drawable/mobil"-->
+                        <!---->
+
+                        <!--app:civ_border_color="#DDD"/>-->
+                        <com.an.customfontview.CustomTextView
+                            app:textFontPath="fonts/popinbold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="More Category"
+                            app:civ_border_width="2dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorWhite"
+
+
+                            />
+                        <!--<ImageView-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_width="200dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:textColor="@color/colorWhite"-->
+                        <!--android:src="@drawable/logo_white_500"-->
+                        <!--android:textSize="20dp"-->
+
+
+                        />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myRecyclerView"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+            <ExpandableListView
+                android:id="@+id/exp_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:groupIndicator="@null"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_menu"
+        ></RelativeLayout>
+    <com.felix.bottomnavygation.BottomNav
+        android:id="@+id/bottomNav"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+</RelativeLayout>

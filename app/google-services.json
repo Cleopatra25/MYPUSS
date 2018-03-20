@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "26667351408",
+    "firebase_url": "https://rentistapps.firebaseio.com",
+    "project_id": "rentistapps",
+    "storage_bucket": "rentistapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26667351408:android:f217bcef96bf661c",
+        "android_client_info": {
+          "package_name": "id.rentist.rentist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26667351408-ujl4ij0u8h7el90g6hje7iuhqclt8r9b.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "26667351408-l036gjtvkf4v4m4e1v4qh8c1gv9lls15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.rentist.rentist",
+            "certificate_hash": "a90201bfa8132eb9cdf043ac765ae95a6a6b14d2"
+          }
+        },
+        {
+          "client_id": "26667351408-871rnvs3ct23fv69t0au17i67i8i106a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.rentist.rentist",
+            "certificate_hash": "1d676bdd3c50b257d1291aa268b052e0679c41e8"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjiZW-VfsyXb38aUOGrbt8GkenMRBQ38s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26667351408-ujl4ij0u8h7el90g6hje7iuhqclt8r9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

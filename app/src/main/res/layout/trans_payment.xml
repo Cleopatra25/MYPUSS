@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/text_margin"
+        android:padding="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rad_balance"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:text="Payment Method"
+                style="@style/Title"/>
+            <RadioButton
+                android:id="@+id/rad_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance"/>
+            <RadioButton
+                android:id="@+id/rad_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit card"/>
+            <RadioButton
+                android:id="@+id/rad_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transfer"/>
+            <RadioButton
+                android:id="@+id/rad_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash on Delivery"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter voucher code if you have one."/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:text="Check voucher code"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_finish_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/text_margin"
+            android:background="@color/colorPrimaryDark"
+            android:text="done"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

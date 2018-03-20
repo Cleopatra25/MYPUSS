@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:context="id.rentist.rentist.activity.V2Registerthird">
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/framegaada"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <com.an.customfontview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="YOUR ACCOUNT IS VERIFIED"
+                android:textColor="@color/colorWhite"
+                android:textSize="22dp"
+                app:textFontPath="fonts/popinbold.otf"
+
+
+
+                />
+            <com.an.customfontview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="fill document to rent "
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                app:textFontPath="fonts/popinregural.otf"
+
+
+
+                />
+        </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/frameada"
+
+      >
+
+      <LinearLayout
+          android:id="@+id/framenumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:visibility="visible"
+          android:orientation="vertical"
+
+          >
+
+          <com.an.customfontview.CustomTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_marginTop="30dp"
+              android:text="V E R I F Y  Y O U R  P H O N E"
+              android:textColor="@color/colorWhite"
+              android:textSize="22dp"
+              app:textFontPath="fonts/popinbold.otf"
+
+
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:layout_marginTop="15dp"
+
+              android:orientation="horizontal">
+
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                  android:layout_weight="4"
+                  android:hint="E N T E R  Y O U R  C O D E"
+                  android:textColorHint="@color/colorWhite">
+
+                  <com.an.customfontview.CustomEditText
+                      android:id="@+id/kodetext"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:backgroundTint="#fff"
+                      android:gravity="center"
+                      android:inputType="number"
+                      android:maxLength="6"
+                      android:textColor="@color/colorWhite"
+                      android:textColorHint="@color/colorWhite"
+                      android:textSize="15dp"
+                      app:textFontPath="fonts/popinmedium.otf" />
+              </android.support.design.widget.TextInputLayout>
+
+              <ImageView
+                  android:id="@+id/hideimage"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_gravity="center"
+                  android:src="@drawable/ic_eye"
+                  android:visibility="invisible" />
+          </LinearLayout>
+
+
+          <android.support.v7.widget.CardView
+              android:id="@+id/linksendcode"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginTop="30dp"
+              android:padding="5dp"
+              app:cardBackgroundColor="@color/colorPrimary"
+              app:cardUseCompatPadding="true"
+
+
+              >
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp">
+
+                  <com.an.customfontview.CustomTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:layout_marginLeft="10dp"
+                      android:text="VERIFY NOW"
+                      android:textColor="#fff"
+
+                      android:textSize="16dp"
+                      app:textFontPath="fonts/popinbold.otf"
+
+
+                      />
+
+              </RelativeLayout>
+
+
+          </android.support.v7.widget.CardView>
+
+          <com.an.customfontview.CustomTextView
+              android:id="@+id/texterrorlimit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_gravity="center"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="30dp"
+              android:gravity="center"
+              android:text="You have reached maximum limit for Resend Code"
+              android:textColor="#E44"
+              android:textSize="15dp"
+              android:visibility="gone"
+              app:textFontPath="fonts/popinregural.otf"
+
+
+              />
+
+
+          <com.an.customfontview.CustomTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="30dp"
+              android:text="Didn't receive code ?"
+              android:textColor="@color/colorWhite"
+              android:textSize="12dp"
+              app:textFontPath="fonts/popinregural.otf"
+
+
+              />
+
+          <com.an.customfontview.CustomTextView
+              android:id="@+id/resendtext"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="10dp"
+              android:text="Resend"
+              android:textColor="@color/colorPrimary"
+              android:textSize="16dp"
+              app:textFontPath="fonts/popinbold.otf"
+
+
+              />
+
+          <com.an.customfontview.CustomTextView
+              android:id="@+id/timetext"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="10dp"
+              android:text="19:00"
+              android:textColor="@color/colorWhite"
+              android:textSize="20dp"
+              android:visibility="gone"
+              app:textFontPath="fonts/popinbold.otf"
+
+
+              />
+
+
+      </LinearLayout>
+
+
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:id="@+id/frameemail"
+
+          >
+
+          <com.an.customfontview.CustomTextView
+              app:textFontPath="fonts/popinbold.otf"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:layout_centerInParent="true"
+              android:text="V E R I F Y  Y O U R  E M A I L"
+              android:textColor="@color/colorWhite"
+              android:textSize="22dp"
+
+
+              />
+
+          <com.an.customfontview.CustomTextView
+              app:textFontPath="fonts/popinregural.otf"
+              android:layout_marginLeft="20dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="We will send email verification to : riski.gustriana.id@Gmail.com"
+              android:textColor="@color/colorWhite"
+              android:textSize="12dp"
+              android:layout_marginRight="20dp"
+              android:id="@+id/emailtext"
+              android:layout_gravity="center"
+              android:gravity="center"
+
+
+              />
+
+
+
+
+
+
+          <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardUseCompatPadding="true"
+              android:layout_marginTop="30dp"
+              app:cardBackgroundColor="@color/colorPrimary"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:padding="5dp"
+              android:id="@+id/linksendemail"
+
+
+              >
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp">
+
+                  <com.an.customfontview.CustomTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:layout_marginLeft="10dp"
+                      android:text="Send Me Email"
+                      android:textColor="#fff"
+
+                      android:textSize="16dp"
+                      app:textFontPath="fonts/popinbold.otf"
+
+
+                      />
+
+              </RelativeLayout>
+
+
+          </android.support.v7.widget.CardView>
+
+
+
+
+        
+      </LinearLayout>
+      
+      
+  </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

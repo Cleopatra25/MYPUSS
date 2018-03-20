@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorLayout"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.Saran_Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <!--<ImageView-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/logo_white_500"-->
+                    <!--/>-->
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rentist"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/complainbanner"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let we know your trouble"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack87"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gothammediums.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant name  :"
+                android:layout_margin="10dp"
+                android:textSize="13dp"
+                android:id="@+id/tname"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                />
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_margin="10dp"
+                />
+
+            <com.an.customfontview.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:id="@+id/mail"
+                android:layout_height="40dp"
+                android:hint="Title"
+                />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#919191"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complain"
+                android:layout_margin="10dp"
+                />
+
+            <com.an.customfontview.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:id="@+id/complain"
+                android:hint="Complain here"
+                android:layout_height="match_parent"
+                />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#919191"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/green"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btnsend"
+            >
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>
+    <!--/-->
+</android.support.design.widget.CoordinatorLayout>

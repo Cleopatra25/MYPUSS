@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Rentist</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="client_id">26667351408-ujl4ij0u8h7el90g6hje7iuhqclt8r9b.apps.googleusercontent.com</string>
+
+    <string name="action_settings">Quit</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Activity Label-->
+    <string name="facebook_app_id">443798276039237</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_detail_search">Detail</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_date_picker">Pick date</string>
+    <string name="title_activity_time_picker">Pick time</string>
+    <string name="title_activity_search">Search</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (option)</string>
+    <string name="action_sign_in">Login or Register</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="error_invalid_password">Password is too short</string>
+    <string name="error_incorrect_password">Password Incorrect</string>
+    <string name="error_field_required">Required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="forgot_pass">We will send you an email for \n reset your password</string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <!--Dummy additionalFeature data-->
+    <string-array name="arr_feature">
+        <item>AC</item>
+        <item>GPS</item>
+        <item>Air bag</item>
+        <item>Smartphone dock</item>
+    </string-array>
+
+    <!--Dummy additional additionalFeature data-->
+    <string-array name="arr_add_feature_l">
+        <item>Baby seat</item>
+        <item>Ban cadangan</item>
+        <item>Surfer board holder</item>
+    </string-array>
+
+    <!--Dummy additional additionalFeature data-->
+    <string-array name="arr_add_feature_r">
+        <item>Fishing gear</item>
+        <item>Media player</item>
+    </string-array>
+
+    <!--Dummy car data-->
+    <string-array name="arr_car_name">
+        <item>Daihatsu Xenia</item>
+        <item>Toyota Avanza</item>
+        <item>Suzuki Ertiga</item>
+        <item>Nissan Grand Livina</item>
+    </string-array>
+
+    <!--Dummy car data-->
+    <integer-array name="arr_car_image">
+        <item>@drawable/daihatsu_xenia_2006</item>
+        <item>@drawable/toyota_avanza_s</item>
+        <item>@drawable/suzuki_ertiga</item>
+        <item>@drawable/nissan_grand_livina</item>
+    </integer-array>
+
+    <!--Dummy car data-->
+    <string-array name="arr_car_location">
+        <item>Kabupaten Badung</item>
+        <item>Karangasem Regency</item>
+        <item>Kabupaten Buleleng</item>
+        <item>Kabupaten Jembrana</item>
+    </string-array>
+
+    <!--Dummy car data-->
+    <string-array name="arr_car_distance">
+        <item>0.22</item>
+        <item>1.33</item>
+        <item>3.11</item>
+        <item>5.01</item>
+    </string-array>
+
+    <!--Dummy car data-->
+    <integer-array name="arr_car_price">
+        <item>500</item>
+        <item>400</item>
+        <item>700</item>
+        <item>800</item>
+    </integer-array>
+
+
+    <string name="slide_1_title">Rentist</string>
+    <string name="slide_1_desc">The best way to rent cars and motorbikes.</string>
+    <string name="slide_2_title">More Friends</string>
+    <string name="slide_2_desc">Connecting owner and renter.</string>
+    <string name="slide_3_title">Great Experience</string>
+    <string name="slide_3_desc">Explore your favourite cars and motorbikes to rent.</string>
+    <string name="slide_4_title">Best Deal</string>
+    <string name="slide_4_desc">Find the best cars and motorbikes with the best prices.</string>
+
+    <string name="date_rent">Date Rent</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="asset_category_entries">
+        <item>Car</item>
+        <item>Motorcycle</item>
+        <item>Yacht</item>
+        <item>Medical</item>
+        <item>Photography</item>
+        <item>Kids Toys</item>
+        <item>Water Sport</item>
+        <item>Maternity</item>
+        <item>Electronic</item>
+        <item>Office</item>
+        <item>Bicycle</item>
+    </string-array>
+
+    <string-array name="critic_suggest_entries">
+        <item>Service</item>
+        <item>Feature</item>
+        <item>Design</item>
+        <item>Performance</item>
+    </string-array>
+
+    <string-array name="filter_car_seats">
+        <item>View All</item>
+        <item>2 seats min.</item>
+        <item>3 seats min.</item>
+        <item>4 seats min.</item>
+        <item>5 seats min.</item>
+        <item>6 seats min.</item>
+        <item>7 seats min.</item>
+        <item>8 seats min.</item>
+        <item>10 seats min.</item>
+        <item>12 seats min.</item>
+    </string-array>
+</resources>

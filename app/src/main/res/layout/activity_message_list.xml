@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666"
+    android:paddingBottom="@dimen/xmin_padding"
+    android:orientation="vertical"
+    tools:context="id.rentist.rentist.activity.MessageListActivity">
+
+
+
+    <include layout="@layout/content_message_list" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progressBar"
+        style="@style/SpinKitView.FadingCircle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_lmedium_height"
+        android:layout_marginTop="@dimen/thumb_med_height"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/xmin_padding"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorPrimary" />
+
+</LinearLayout>

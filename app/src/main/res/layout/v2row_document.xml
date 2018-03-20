@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.an.customfontview.CustomTextView
+        android:id="@+id/documentitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="KTP"
+        android:textColor="@color/colorWhite"
+        android:textSize="17dp"
+        app:textFontPath="fonts/popinbold.otf"
+
+
+        />
+
+    <com.an.customfontview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="KTP"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorone"
+        android:textSize="17dp"
+        android:visibility="gone"
+        android:id="@+id/documenid"
+        app:textFontPath="fonts/popinbold.otf"
+
+
+        />
+
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:id="@+id/documenimage"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bacgroundgambar"
+        />
+
+
+
+
+
+</LinearLayout>

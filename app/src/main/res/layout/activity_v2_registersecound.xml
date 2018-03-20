@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back_activity"
+    tools:context="id.rentist.rentist.activity.V2Registersecound">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_left_arrow"
+                android:id="@+id/backimage"
+                />
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="@drawable/ic_back_frame"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/popinbold.otf"
+                android:id="@+id/namaitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:text="Y O U R  P R O F I L E"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23dp"
+
+
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textColorHint="@color/colorone"
+                    android:hint="F I R S T  N A M E"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+                    <com.an.customfontview.CustomEditText
+                        android:id="@+id/firstnametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:backgroundTint="@color/colorone"
+
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colortree"
+                        android:textColorHint="@color/colorone"
+                        android:textSize="15dp"
+                        app:textFontPath="fonts/popinmedium.otf" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_eye"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textColorHint="@color/colorone"
+                    android:hint="L A S T  N A M E"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+                    <com.an.customfontview.CustomEditText
+                        android:id="@+id/lastnametext"                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:backgroundTint="@color/colorone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colortree"
+                        android:textColorHint="@color/colorone"
+                        android:textSize="15dp"
+                        app:textFontPath="fonts/popinmedium.otf" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_eye"
+
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:textColorHint="@color/colorone"
+                    android:hint="R E F E R R E R  I D"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+                    <com.an.customfontview.CustomEditText
+                        android:id="@+id/refidtext"                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:backgroundTint="@color/colorone"
+
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colortree"
+                        android:textColorHint="@color/colorone"
+                        android:textSize="15dp"
+                        app:textFontPath="fonts/popinmedium.otf" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_eye"
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/popinregural.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Leave blank if don't have Reffer ID"
+                android:textColor="@color/colortwo"
+                android:textSize="13dp"
+                android:layout_marginLeft="40dp"
+
+
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+
+           
+
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_next_circle"
+                        android:id="@+id/linknext"
+
+                        />
+
+
+
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

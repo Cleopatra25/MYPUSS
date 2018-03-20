@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+
+    tools:context="id.rentist.rentist.activity.DetailSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            android:layout_marginBottom="10dp"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp">
+        </com.synnapps.carouselview.CarouselView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:id="@+id/images"
+
+            android:src="@drawable/icmotor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <!--title-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#99e52c"
+                app:cardUseCompatPadding="true"
+
+                android:layout_marginTop="5dp"
+                >
+
+                <com.an.customfontview.CustomTextView
+                    android:textColor="#fff"
+                    android:textSize="17dp"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.2000.000"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/harga"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/medicalequipment_blue" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Palezzo"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="#DDD" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/tname"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Pickup time"
+                    android:textSize="17dp"
+                    app:textFontPath="fonts/gothamxlight.otf"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <com.an.customfontview.CustomTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/description"
+
+                android:layout_marginTop="15dp"
+                android:background="@color/transparent"
+                android:hint="tenda dengan kapasitas layer float button yang mempesona"
+                android:textColor="#000"
+                android:textColorHint="#333"
+                android:textDirection="ltr"
+                android:textSize="13dp"
+                app:textFontPath="fonts/gothammediums.otf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/insurance"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="Insurance"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint=":"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/insurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="True"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/deliverymethod"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="Delivery Method"
+                    android:textColorHint="#333"
+
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint=":"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="Pickup"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    android:id="@+id/delivery_method"
+
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_deposit"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="Eligible Member"
+                    android:textColorHint="#333"
+
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint=":"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparent"
+                    android:hint="Pickup"
+                    android:textColorHint="#333"
+                    android:textDirection="ltr"
+                    android:textSize="13dp"
+                    android:id="@+id/badge"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/account"
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tenant Name"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:id="@+id/tenantname"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/mapb"
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tenant Name"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:id="@+id/locationname"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:text="engine_capacity"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+
+                    android:id="@+id/brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="100cc"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+
+                    android:text="license_plat"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+                <com.an.customfontview.CustomTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    android:textColor="#333"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/licenced_plat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Auto"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="transmission"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/texttransmition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bensin"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="fuel"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/textfuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2015"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textyear"
+                android:text="2015"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 orang"
+                android:id="@+id/capacity"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:text="Sub Category"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+
+                    android:id="@+id/subcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="100cc"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:text="Min Rent Day"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+
+                    android:id="@+id/minrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="100cc"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:text="Type"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    app:textFontPath="fonts/gothammediums.otf"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="100cc"
+                    android:textColor="#333"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/framedeposit"
+                >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_badge"
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Deposit"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Air Bag"
+                    android:textColor="#333"
+                    android:id="@+id/deposit"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/list_feature"
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="List Feature"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+
+                    app:textFontPath="fonts/gotham_bold.otf"
+
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#fff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/account"
+                                android:layout_marginRight="5dp"
+                                />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="5dp"
+                                android:text="Rental By"
+                                android:textColor="#999"
+                                android:textSize="15dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text=":"
+                                android:textColor="#999"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:text="Riski Gustriana"
+                                android:textColor="#999"
+                                android:textSize="15dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/marker"
+                                    android:layout_marginRight="5dp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:text="Address"
+                                    android:textColor="#999"
+                                    android:textSize="15dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#999"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jl May Jend He Sukma Desa Bitung Barat "
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="15dp"
+                                    android:id="@+id/taddress"
+                                    android:textColor="#999"
+                                    />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/colorPrimary"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                >
+                                <ImageView
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:src="@drawable/ic_message"
+                                    android:layout_gravity="center"
+
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Send Message"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+
+                                    android:layout_marginLeft="10dp"
+                                    />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/rent_packe"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                />
+
+            <FrameLayout
+                android:id="@+id/policies_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:orientation="horizontal">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Contidions"
+                    app:textFontPath="fonts/gothammediums.otf"
+                    style="@style/SubHeading" />
+
+                <ImageView
+                    android:id="@+id/policies_arrow"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_keyboard_arrow_down"
+                    style="@style/ImageBody"
+                    android:layout_gravity="right"/>
+
+            </FrameLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/policies_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:ael_expanded="false"
+                app:ael_duration="500"
+                app:ael_orientation="vertical">
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:id="@+id/txt_policies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:lines="10"/>
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#99e52c"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:id="@+id/cart"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cart"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add To Cart"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    android:padding="5dp"
+
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

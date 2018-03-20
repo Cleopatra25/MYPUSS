@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/xmin_padding"
+    android:orientation="vertical"
+
+    tools:context="id.rentist.rentist.activity.TestimonyAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/xmin_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleanliness"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/t_cleanliness_rating"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            app:srb_starSize="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+
+            app:srb_rating="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/xmin_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neatness"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/t_neatness_rating"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            app:srb_starSize="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            app:srb_rating="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/xmin_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Honesty"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/t_honesty_rating"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            app:srb_rating="0"
+            app:srb_starSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xmin_padding"
+        android:orientation="vertical"
+        android:padding="@dimen/xmin_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comunication"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/t_comunication_rating"
+            style="@style/CustomRatingBar"
+            android:layout_width="wrap_content"
+             app:srb_starSize="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+
+            app:srb_rating="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xmin_padding"
+        android:orientation="vertical"
+        android:padding="@dimen/xmin_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardBackgroundColor="#fff"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="10dp"
+    >
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/flag_transparent"
+            android:hint="Tulis testimoni anda"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5"
+            android:padding="@dimen/min_padding"
+            android:text="" />
+
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      app:cardUseCompatPadding="true"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:id="@+id/send"
+      app:cardBackgroundColor="@color/colorPrimary"
+      >
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Send"
+          android:layout_gravity="center"
+          android:textSize="20dp"
+
+
+          android:textColor="#fff"
+          android:textStyle="bold"
+          />
+
+
+  </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+

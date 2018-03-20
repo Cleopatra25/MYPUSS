@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_date">
+        <item>04 Jul 2017, 10:02 AM</item>
+        <item>03 Jul 2017, 11:22 AM</item>
+        <item>02 Jul 2017, 10:22 AM</item>
+        <item>01 Jun 2017, 12:00 AM</item>
+        <item>01 Jun 2017, 08:07 AM</item>
+    </string-array>
+    <string-array name="startRent">
+        <item>18 Jul 2017, 12:00 AM</item>
+        <item>03 Jul 2017, 11:22 AM</item>
+        <item>02 Jul 2017, 10:22 AM</item>
+        <item>14 Jun 2017, 12:00 AM</item>
+        <item>17 Jul 2017, 08:07 AM</item>
+    </string-array>
+    <string-array name="endRent">
+        <item>20 Jul 2017, 11:00 AM</item>
+        <item>03 Jul 2017, 11:22 AM</item>
+        <item>02 Jul 2017, 10:22 AM</item>
+        <item>15 Jul 2017, 12:00 AM</item>
+        <item>18 Jul 2017, 08:07 AM</item>
+    </string-array>
+    <string-array name="statusRent">
+        <item>On Booking</item>
+        <item>On Rent</item>
+        <item>Completed</item>
+        <item>Completed</item>
+        <item>Completed</item>
+    </string-array>
+</resources>

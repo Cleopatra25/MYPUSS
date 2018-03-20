@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back_activity"
+
+    tools:context="id.rentist.rentist.activity.V2Registerthird">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+
+                android:src="@drawable/ic_left_arrow"
+                android:id="@+id/backimage" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:background="@drawable/ic_back_frame"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentRight="true"
+
+                        android:src="@drawable/ic_back_activation"
+                       />
+
+                        <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/popinbold.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerInParent="true"
+                        android:text="V E R I F Y  Y O U R  P H O N E"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22dp"
+
+
+                        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            app:ccp_contentColor="@color/colorBlack"
+            app:ccp_defaultNameCode="ID"
+            app:ccp_showFlag="true"/>
+                    <com.an.customfontview.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:textFontPath="fonts/popinmedium.otf"
+                        android:hint="E N T E R  Y O U R  N U M B E R"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="13dp"
+                        android:background="@color/transparent"
+                        android:textColor="@color/colortree"
+                        android:textColorHint="@color/colorone"
+
+                android:backgroundTint="@color/colorWhite"
+                        android:id="@+id/numbertext"
+
+                        />
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.1dp"
+    android:background="@color/colorone"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="10dp"
+    />
+
+                    <com.an.customfontview.CustomEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:textFontPath="fonts/popinmedium.otf"
+                        android:hint="E N T E R  Y O U R  C O D E"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorone"
+                        android:textColorHint="@color/colorone"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/colorWhite"
+                        android:id="@+id/kodetext"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginRight="47dp"
+                        />
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:padding="5dp"
+
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:id="@+id/linkverify"
+                            android:layout_height="match_parent">
+
+                            <com.an.customfontview.CustomTextView
+                                app:textFontPath="fonts/popinbold.otf"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="VERIFY NOW "
+
+                                android:textColor="#fff"
+                                android:textSize="16dp"
+
+
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/linksend"
+                            android:layout_height="match_parent">
+
+                            <com.an.customfontview.CustomTextView
+                                app:textFontPath="fonts/popinbold.otf"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="CREATE ACCOUNT"
+
+                                android:textColor="#fff"
+                                android:textSize="16dp"
+
+
+                                />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/linkskip"
+                            android:visibility="gone"
+                            android:layout_height="match_parent">
+
+                            <com.an.customfontview.CustomTextView
+                                app:textFontPath="fonts/popinbold.otf"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="SKIP ANYWAY"
+
+                                android:textColor="#fff"
+                                android:textSize="16dp"
+
+
+                                />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/popinregural.otf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="You have reached maximum limit for Resend Code"
+                        android:textColor="#E44"
+                        android:textSize="15dp"
+                        android:id="@+id/texterrorlimit"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+
+
+                        />
+
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/popinregural.otf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Didn't receive code ?"
+                        android:textColor="@color/colorone"
+                        android:visibility="gone"
+                        android:textSize="12dp"
+                        android:layout_marginTop="30dp"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/popinbold.otf"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Resend"
+                        android:visibility="gone"
+                        android:id="@+id/resendtext"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+
+
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

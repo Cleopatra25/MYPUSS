@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.rentist.rentist.activity.AddressFormActivity">
+
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/con_toolbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_grad"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/con_search"
+        android:layout_below="@+id/con_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/min_padding"
+            >
+
+            <ImageView
+                android:id="@+id/marker_orange"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/xmin_padding"
+                android:src="@drawable/ic_map_nearme" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/con_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/min_padding"
+                android:layout_marginEnd="@dimen/min_padding"
+                android:layout_toEndOf="@id/marker_orange"
+                android:textColorHint="@color/colorBlack54">
+
+                <EditText
+                    android:id="@+id/add_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/btn_close"
+                    android:layout_toEndOf="@+id/marker_orange"
+                    android:ems="10"
+                    android:hint="Add Address here"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="3"
+                    android:padding="@dimen/min_padding" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/con_address"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/xmin_padding"
+                android:background="@drawable/ripple_effect"
+                android:src="@drawable/ic_close_grey" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/result"
+        android:layout_below="@id/con_search"
+        android:layout_marginTop="@dimen/small_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_below="@+id/con_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/add_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@+id/con_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="@dimen/breadcrumb_height">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/smed_padding">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Address"
+                        android:maxLines="3" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Country"
+                        android:inputType="none"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="none"
+                        android:hint="Province" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="City"
+                        android:inputType="none"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_distric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="District"
+                        android:inputType="none"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_vilage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Village"
+                        android:inputType="none"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack54"
+                    android:layout_marginBottom="@dimen/xmin_padding">
+
+                    <EditText
+                        android:id="@+id/addf_postal_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Postal Code"
+                        android:inputType="none"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_medium_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:text="Save"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/xlar_padding"
+                    android:layout_marginStart="@dimen/xlar_padding"
+                    android:layout_marginBottom="@dimen/smed_padding"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

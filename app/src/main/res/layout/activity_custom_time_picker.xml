@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/text_margin"
+    tools:context="id.rentist.rentist.activity.CustomTimePickerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_hour_up"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_btn_up"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edt_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="07"
+                android:textSize="54sp" />
+
+            <Button
+                android:id="@+id/btn_hour_down"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_btn_up"
+                android:gravity="center"
+                android:rotation="180" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_min_up"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_btn_up"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edt_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="00"
+                android:textSize="54sp" />
+
+            <Button
+                android:id="@+id/btn_min_down"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_btn_up"
+                android:gravity="center"
+                android:rotation="180" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:text="done"/>
+</LinearLayout>

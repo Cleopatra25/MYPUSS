@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0088ff</color>
+    <color name="colorPrimaryDark">#008ecb</color>
+    <!--<color name="colorAccent">#ffffff</color>-->
+    <color name="colorAccent">#33cc78</color>
+    <color name="colorAccents">#b5b5b5</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorbasic">#F7F7F7</color>
+    <color name="yellow">#EE0</color>
+    <color name="colorone">#b5b5b5</color>
+    <color name="colortwo">#ffca29</color>
+    <color name="colortree">#757575</color>
+
+    <color name="yellowd">#ee0</color>
+    <color name="transparent">#00000000</color>
+    <color name="dividerColor">#e0e0e0</color>
+    <color name="custom_header_text">#030303</color>
+    <!--<color name="colorDarkGrey">#010000</color>-->
+    <color name="colorLightBlue">#dbf1f8</color>
+    <color name="colorBlue">#01BEFE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack54">#757575</color>
+    <color name="colorBlack87">#212121</color>
+    <color name="colorTextBlue">#00afef</color>
+
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#96989A</color>
+    <color name="grey_soft">#F5F5F5</color>
+    <color name="grey_bg">#EBEFF0</color>
+    <color name="grey_text">#222D31</color>
+    <color name="me_chat_bg">#FFE0B2</color>
+    <color name="green">#33cc78</color>
+</resources>

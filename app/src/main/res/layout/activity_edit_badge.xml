@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.EditBadge">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/green"
+
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gotham_bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Your Account badge  :"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:id="@+id/badgeid"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Complete your profile to get Verified"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/cardview1"
+
+
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bank Name"
+                    android:layout_centerInParent="true"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80dddddd"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textColorHint="#999"
+                    android:id="@+id/bankname"
+                    android:padding="10dp"
+                    android:hint="Your Bank Account"
+
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Bank Account Name"
+                    android:layout_centerInParent="true"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80dddddd"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:textColorHint="#999"
+                    android:padding="10dp"
+                    android:id="@+id/accountname"
+                    android:hint="Your Bank Account Name"
+
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Bank Account Number"
+                    android:layout_centerInParent="true"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/accountnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80dddddd"
+                    android:hint="Ex : 1234 1234567890"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:inputType="number"
+                    android:textColorHint="#999"
+                    android:textSize="15dp"
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+
+                    android:text="KTP / Passport / KITAS"
+                    android:layout_centerInParent="true"
+                    android:textColor="#444"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/addimage"
+                    android:id="@+id/imagektp"
+                    android:layout_gravity="center"
+
+
+                    />
+
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Family Card"
+                    android:layout_centerInParent="true"
+                    android:textColor="#444"
+                    android:layout_gravity="center"
+
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14dp"
+                    app:textFontPath="fonts/gothammediums.otf"
+
+                    />
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/addimage"
+                    android:id="@+id/imagefamilycard"
+android:layout_gravity="center"
+
+                    />
+
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Electricity Card"
+                    android:layout_centerInParent="true"
+                    android:textColor="#444"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageair"
+                    android:src="@drawable/addimage"
+                    android:layout_gravity="center"
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Connect With Us"
+                    android:layout_centerInParent="true"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:id="@+id/google"
+                    android:layout_margin="10dp"
+                    android:background="#AAA"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        >
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/googleg_standard_color_18"
+
+                            />
+
+
+
+
+                        <com.an.customfontview.CustomTextView
+                            app:textFontPath="fonts/gothammediums.otf"                    android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not Connected"
+                            android:id="@+id/textfb"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+
+                            android:layout_marginLeft="20dp"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginBottom="15dp"
+                    android:alpha="0.87"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="save"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

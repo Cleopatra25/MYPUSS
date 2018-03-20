@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="0dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="0.5dp"
+    android:layout_marginStart="0.5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorbasic"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/med_padding">
+
+        <com.an.customfontview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:textFontPath="fonts/gotham_bold.otf"
+            android:textSize="22dp"
+            android:id="@+id/id_value"
+            android:text="Car"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_value"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mobil" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+        <com.an.customfontview.CustomTextView
+            android:layout_width="match_parent"
+            android:id="@+id/title_value"
+            android:layout_height="wrap_content"
+            android:text="Toyota Avanza 2016"
+            android:textColor="#000"
+            android:textSize="10dp"
+            app:textFontPath="fonts/popinbold.otf"
+
+            />
+
+        <com.an.customfontview.CustomTextView
+            android:id="@+id/city_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#919191"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            app:textFontPath="fonts/popinregural.otf"
+            android:text="bogor"
+            />
+
+        <com.an.customfontview.CustomTextView
+            android:layout_width="match_parent"
+            android:id="@+id/price_value"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Rp 3000.0000/Day"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"
+            app:textFontPath="fonts/gotham_bold.otf"
+
+            />
+
+    <com.an.customfontview.CustomTextView
+        android:id="@+id/sumary_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#919191"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        app:textFontPath="fonts/popinregural.otf"
+        android:text="lorem ipsum dolor si amet lazy dog found miracle to his body"
+        />
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="id.rentist.rentist.activity.SearchListMaternity">
+
+    <ScrollView
+        android:id="@+id/scroll_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/img_loc"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/iclocation_results" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/address"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/min_padding"
+                    android:gravity="center"
+                    android:text="Jl guntur no 15 jakarta barat tamn kencanan bogor "
+                    android:textSize="13dp"
+                    android:textColor="@color/colorBlack"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/pagekosong"
+                    android:visibility="gone"
+                    android:layout_marginTop="40dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/avadefault"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/slight_margin"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:text="We are sorry "
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gothammediums.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/slight_margin"
+                        android:gravity="center"
+                        android:text=" No item found as result of your search"
+                        android:textSize="13dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_search_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:id="@+id/prog_search_list"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/text_margin"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="filter"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

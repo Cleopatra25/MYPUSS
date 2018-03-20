@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.rentist.rentist.activity.CheckOutLocationActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/close"
+        android:src="@drawable/ic_close_grey"
+        />
+
+    <com.an.customfontview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="Asset Location"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        app:textFontPath="fonts/popinbold.otf"
+        />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/text_margin">-->
+
+            <!--<fragment-->
+                <!--android:id="@+id/autocomplete_fragment_checkout"-->
+                <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<View-->
+                <!--android:id="@+id/view_hide"-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:clickable="true"-->
+                <!--android:background="@color/colorWhite"/>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ic_location_blue" />
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_save_address"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/text_margin"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:text="set address"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

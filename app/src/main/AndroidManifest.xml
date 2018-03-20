@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.rentist.rentist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+     The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+     Google Maps Android API v2, but you must specify either coarse or fine
+     location permissions for the 'MyLocation' functionality. ice
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <service android:name=".FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <!--
+            <intent-filter>
+                <action android:name="id.travfly.travfly.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.SignupActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.VerifyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.DetailSearchActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_detail_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.DetailCarActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_detail_search"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.SearchListCarActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.OnBoardActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FilterCarActivity"
+            android:configChanges="orientation"
+            android:label="Filter"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name=".activity.FragHistory"
+            android:label="History Order" />
+        -->
+        <activity
+            android:name=".activity.DetailHistoryOrder"
+            android:configChanges="orientation"
+            android:label="Order ID : 12334567"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailHistoryOrderOnBook"
+            android:configChanges="orientation"
+            android:label="Order ID : 12334567"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.DetailChatActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.RescheduleActivity"
+            android:configChanges="orientation"
+            android:label="Reschedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CancelActivity"
+            android:configChanges="orientation"
+            android:label="Cancle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExtendActivity"
+            android:configChanges="orientation"
+            android:label="Extend "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.TopUpActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RentActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.SelectCityActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".fragment.TransPaymentFragment"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".fragment.AboutActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.TransactionListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CustomDatePickerRangeActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_date_picker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CustomDatePickerSingleActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_date_picker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CustomTimePickerActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_time_picker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CartActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.SearchListGeneralActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CheckOutActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.CheckOutLocationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.Poins"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.GetVoucher"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <!--  -->
+        </activity>
+        <activity
+            android:name=".activity.ForgotActivity"
+            android:label="Forgot Pasword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--
+        <activity
+            android:name=".activity.FragHistory"
+            android:label="History Order" />
+        -->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider443798276039237"
+            android:exported="true" />
+
+        <activity android:name=".activity.FacebookHashKeyActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAtyoY5tN1GsJLB_OXa9bDatOvY59VFnoc" />
+
+        <activity
+            android:name=".activity.Shareapps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Saran_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.PurcaseVoucher" />
+        <activity android:name=".activity.PurcaseSumarry" />
+        <activity
+            android:name=".activity.ChecoutActivity"
+            android:label="Booking Confirmation" />
+        <activity
+            android:name=".activity.SummaryActivity"
+            android:label="Payment" />
+
+        <receiver android:name=".SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.Cekjson">
+            <intent-filter>
+                <action android:name="id.rentist.rentist.activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SearchListMotorActivity" />
+        <activity android:name=".activity.SearchListYach" />
+        <activity android:name=".activity.SearchMedicalList" />
+        <activity android:name=".activity.SearchListPhoto" />
+        <activity android:name=".activity.SearchListKids" />
+        <activity android:name=".activity.SearchListWater" />
+        <activity android:name=".activity.SearchListSepeda" />
+        <activity android:name=".activity.Detail_Motor" />
+        <activity android:name=".activity.Yacht_Detail" />
+        <activity android:name=".activity.Medical_Detail" />
+        <activity android:name=".activity.Bicycle_detail" />
+        <activity android:name=".activity.FIlterMotorActivity" />
+        <activity android:name=".activity.Yach_FIiter" />
+        <activity android:name=".activity.Bicycle_filter" />
+        <activity android:name=".activity.Photo_Detail" />
+        <activity android:name=".activity.Water_Detail" />
+        <activity android:name=".activity.Kids_Detail" />
+        <activity android:name=".activity.Maternity_activity" />
+        <activity android:name=".activity.SearchListMaternity" />
+        <activity android:name=".activity.SearchListElectronic" />
+        <activity android:name=".activity.SearchListOffice" />
+        <activity android:name=".activity.Office_detail" />
+        <activity android:name=".activity.Maternity_Detail" />
+        <activity android:name=".activity.Electronic_Detail" />
+        <activity android:name=".activity.TestimonialRating" />
+        <activity android:name=".activity.Medical_Filter" />
+        <activity android:name=".activity.Photo_Filter" />
+        <activity android:name=".activity.Kids_Filter" />
+        <activity android:name=".activity.Water_Filter" />
+        <activity android:name=".activity.Maternity_Filter" />
+        <activity android:name=".activity.Electronic_Filter" />
+        <activity android:name=".activity.Hystory_transaction" />
+        <activity android:name=".activity.Detailhytoryexpandable" />
+        <activity android:name=".activity.MessageListActivity" />
+        <activity android:name=".activity.MessageDetail" />
+        <activity android:name=".activity.MessageDetailActivity" />
+        <activity android:name=".activity.TestimonyAddActivity" />
+        <activity android:name=".activity.SearchListFashion" />
+        <activity android:name=".activity.Fashion_Filter" />
+        <activity android:name=".activity.FashionDetail" />
+        <activity android:name=".activity.Termandcondition" />
+        <activity android:name=".activity.CustomDaterangepickdua" />
+        <activity android:name=".activity.EditBadge" />
+        <activity android:name=".activity.Office_filter" />
+        <activity android:name=".activity.MyHome" />
+        <activity
+            android:name=".activity.V2Login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Registerfirst"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Registersecound"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Registerthird"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Verify"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Editprofile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Changepassword"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Forgotpassword"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Verification"
+            android:label="Verification"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Home"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddressesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AddressFormActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2GroupCategory"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2CategoryMain"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2Categorylist"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2DetailAsset"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ChangePhoneEmailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.InputPasswordActivity"
+            android:configChanges="orientation"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".activity.V2LocationActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2_Date_Range_Picker"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.V2_Filter_Asset"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.V2Attribut_Detail"></activity>
+    </application>
+
+</manifest>

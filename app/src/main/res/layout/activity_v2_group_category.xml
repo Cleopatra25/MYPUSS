@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.V2GroupCategory"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/bg_grad"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        >
+
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spn_city"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/text_margin"
+                            android:textSize="16sp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentLeft="true"
+                            app:hintText="All CITY"/>
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:layout_width="60dp"-->
+                            <!--android:layout_height="60dp"-->
+                            <!--android:src="@drawable/mobil"-->
+                    <!---->
+
+                            <!--app:civ_border_color="#DDD"/>-->
+                        <com.an.customfontview.CustomTextView
+                            app:textFontPath="fonts/popinbold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="HOLIDAY"
+                            app:civ_border_width="2dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="4dp"
+                            android:id="@+id/titlename"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorWhite"
+
+
+                            />
+                        <!--<ImageView-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_width="200dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                        <!--android:visibility="gone"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:src="@drawable/logo_white_500"-->
+                            <!--android:textSize="20dp"-->
+
+
+                            />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="5dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp">
+            </com.synnapps.carouselview.CarouselView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <!--<com.tuyenmonkey.mkloader.MKLoader-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/loadcategory"-->
+                <!--app:mk_type="TwinFishesSpinner"-->
+                <!--app:mk_color="@color/colorPrimary"-->
+                <!--/>-->
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avicategory"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:indicatorColor="@color/colorPrimary"
+                    app:indicatorName="BallScaleMultipleIndicator" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="vertical" />
+            </RelativeLayout>
+          
+       
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+               
+              
+
+
+               
+
+           
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_map_nearme"
+
+                        />
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/popinbold.otf"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Need Holiday ? lets make plan"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorBlack87"
+
+
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="80dp">
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/avilist"
+                        style="@style/AVLoadingIndicatorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        app:indicatorColor="@color/colorPrimary"
+                        app:indicatorName="BallScaleMultipleIndicator" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:scrollbars="vertical" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_menu"
+        ></RelativeLayout>
+    <com.felix.bottomnavygation.BottomNav
+        android:id="@+id/bottomNav"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+</RelativeLayout>

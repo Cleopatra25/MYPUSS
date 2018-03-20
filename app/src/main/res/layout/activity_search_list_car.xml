@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fff"
+    tools:context="id.rentist.rentist.activity.SearchListCarActivity">
+
+
+    <ScrollView
+        android:id="@+id/scroll_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/img_loc"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/iclocation_results" />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/address"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/min_padding"
+                    android:gravity="center"
+                    android:text="Jl guntur no 15 jakarta barat tamn kencanan bogor "
+                    android:textSize="13dp"
+                    android:textColor="@color/colorBlack"
+                    app:textFontPath="fonts/gothammediums.otf" />
+
+            </LinearLayout>
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_loc"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:src="@drawable/iclocation_results" />-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                <!--android:id="@+id/kota"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="Bogor"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="19dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:textFontPath="fonts/gotham_bold.otf"-->
+
+                <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                <!--android:id="@+id/address"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="@dimen/min_padding"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Jl guntur no 15 jakarta barat tamn kencanan bogor "-->
+                <!--android:textSize="13dp"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--app:textFontPath="fonts/gothammediums.otf" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/pagekosong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avadefault" />
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/slight_margin"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="We are sorry "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        app:textFontPath="fonts/gotham_bold.otf" />
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/slight_margin"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text=" No item found as result of your search"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gothammediums.otf" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_search_list"
+                    android:background="#ddd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/prog_search_list"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/text_margin"
+                    android:background="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="filter"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

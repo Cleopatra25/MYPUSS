@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.DetailHistoryOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:background="@color/colorWhite">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Order Date : " />
+                    <TextView
+                        android:id="@+id/txt_detail_history_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="03 Jul 2017, 12:00 PM " />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            style="@style/Divider"
+            android:layout_margin="@dimen/text_margin"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/imagess"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_detail_history_rental_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="24sp"
+                            android:text="Made Arif"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_detail_history_rental_asset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toyota - Xenia"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txt_detail_history_rental_plat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DK 9288 KZL"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin">
+            <LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price  "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/txt_detail_history_nominal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="RP. 435,000 " />
+            </LinearLayout>
+            <LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Voucher code"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/txt_detail_history_voucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="-" />
+            </LinearLayout>
+            <LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Rent"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/txt_detail_history_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="17 Jul 2017, 12:00 AM " />
+            </LinearLayout>
+            <LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Rent"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/txt_detail_history_end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="18 Jul 2017, 12:00 AM " />
+            </LinearLayout>
+            <LinearLayout>
+                <TextView
+                    android:id="@+id/d_orderDetail_status_p"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/txt_detail_history_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Completed" />
+            </LinearLayout>
+
+        </TableLayout>
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginRight="@dimen/slight_margin"
+                android:layout_weight="1"
+                android:background="@color/colorBlack54"
+                android:text="cancel order"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_reschedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/slight_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="reschedule"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_extend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:text="extend" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A54"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:text="Complain" />
+<!--
+        <Button
+            android:id="@+id/detail_order_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="Report Issue" />-->
+    </LinearLayout>
+
+</RelativeLayout>

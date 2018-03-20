@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.DetailHistoryOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:background="@color/colorWhite">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/d_orderDetail_P"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Order Date : " />
+                    <TextView
+                        android:id="@+id/d_orderDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="03 Jul 2017, 12:00 PM " />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+                <TableRow>
+
+                    <ImageView
+                        android:layout_weight="1"
+
+                        android:layout_height="100dp"
+                        android:layout_width="100dp"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="24sp"
+                            android:text="Made Arif"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toyota - Xenia"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DK 9288 KZL"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_price_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price  "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": RP. 435,000 " />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_promo_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Code Promo  "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": - " />
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_customer_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Customer Name   "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": Arman Muhammad " />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_start_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Rent   "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": 17 Jul 2017, 12:00 AM " />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_end_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Rent   "
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": 18 Jul 2017, 12:00 AM " />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/d_orderDetail_status_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:id="@+id/d_orderDetail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=": Completed" />
+            </TableRow>
+
+        </TableLayout>
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/d_orderDetail_rated_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:text=": You Rated" />
+
+        <RatingBar
+            android:id="@+id/detail_order_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:numStars="5"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <!--<Button
+            android:id="@+id/detail_order_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="Report Issue" />-->
+    </LinearLayout>
+
+</RelativeLayout>

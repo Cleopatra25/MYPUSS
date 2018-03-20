@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+
+
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"> <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_profile_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/avadefault"
+                        app:civ_border_color="#FFf"
+                        app:civ_border_width="3dp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        >
+                        <com.an.customfontview.CustomTextView
+                            app:textFontPath="fonts/gotham_bold.otf"
+                            android:id="@+id/txt_profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Mapan Jinas tia"
+                            android:layout_centerInParent="true"
+
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+
+
+
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        >
+                        <com.an.customfontview.CustomTextView
+                            app:textFontPath="fonts/gothamxlight.otf"
+                            android:id="@+id/txt_profile_balance"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Basic"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+
+
+
+                            />
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+
+
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/icbtnlogin"
+                                />
+                            <com.an.customfontview.CustomTextView
+                                app:textFontPath="fonts/gothammediums.otf"
+                                android:id="@+id/status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Basic"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+
+
+
+                                />
+
+                            <View
+                                android:layout_width="0.2dp"
+                                android:layout_height="match_parent"
+                                android:background="#fff"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="2dp"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_share"
+                                />
+
+                            <com.an.customfontview.CustomTextView
+                                app:textFontPath="fonts/gothammediums.otf"
+                                android:id="@+id/refid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cleo25"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+
+
+
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F59B00"
+    android:id="@+id/badgeframe"
+    android:layout_margin="5dp"
+    >
+
+
+    <com.an.customfontview.CustomTextView
+        app:textFontPath="fonts/gothammediums.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Your account hasn't been verified yet. Please complete the form so we can review your account."
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#Fff"
+        android:textSize="17dp"
+
+
+        />
+
+</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Information"
+                android:layout_centerInParent="true"
+                android:textColor="@color/green"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phoneprofile"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Phone"
+                    android:layout_centerInParent="true"
+                    android:textColor="#919191"
+                    android:textSize="10dp"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="+082299187633"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/edt_profile_phone"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/emailprofile"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Email"
+                    android:layout_centerInParent="true"
+                    android:textColor="#919191"
+                    android:textSize="10dp"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="mapanjinastia@gmail.com"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/edt_profile_email"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/locationprofile"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                >
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Address"
+                    android:layout_centerInParent="true"
+                    android:textColor="#919191"
+                    android:textSize="10dp"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Jl Mayjend He sukma desa telukpinang rt 01, rw 02 "
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/talamat"
+
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#BBB"
+            android:layout_margin="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                >
+
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gotham_bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Hobby"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jl Mayjend He sukma desa telukpinang rt 01, rw 02 "
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/thobby"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                >
+
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gotham_bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Gender"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jl Mayjend He sukma desa telukpinang rt 01, rw 02 "
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/tinterest"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#BBB"
+            android:layout_margin="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Connected"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/green"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/google"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="#AAA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                >
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/googleg_standard_color_18"
+
+                    />
+
+
+
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gothammediums.otf"                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect with Google"
+                    android:id="@+id/textfb"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+
+            <com.facebook.login.widget.LoginButton
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/connectWithFbButton"
+                android:layout_width="match_parent"
+                facebook:login_text="Connect With Facebook"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+        />
+
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KTP/Passport/KITAS"
+android:layout_gravity="center"
+
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#80EEEEEE"
+                    android:layout_margin="10dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/addimage"
+                    android:id="@+id/imagektp"
+
+
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family Card"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#80EEEEEE"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/addimage"
+                    android:id="@+id/imagefamily"
+                    android:layout_gravity="center"
+
+
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electricity Card"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+
+
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#80EEEEEE"
+                    android:layout_margin="10dp"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/addimage"
+                    android:id="@+id/imagelistrik"
+
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <com.an.customfontview.CustomTextView
+        app:textFontPath="fonts/gotham_bold.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Bank Name"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/green"
+        android:layout_marginLeft="10dp"
+
+        android:textSize="17dp"
+        />
+
+
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gothammediums.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:id="@+id/bankname"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="15dp"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gotham_bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bank Account Name"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="17dp"
+            />
+
+
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gothammediums.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:id="@+id/accountname"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="15dp"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gotham_bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bank Account Number"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/green"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="17dp"
+            />
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gothammediums.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:id="@+id/accountnumber"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_logout"
+            android:text="Logout"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_marginBottom="80dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebook"
+            android:padding="5dp"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#DDD"
+                android:padding="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/fb_logo_white_29"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Connected"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+
+                    android:layout_marginLeft="20dp"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_menu"
+        ></RelativeLayout>
+    <com.felix.bottomnavygation.BottomNav
+        android:id="@+id/bottomNav"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <!--linear name icon-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/list_feature"
+                />
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:id="@+id/namaitem"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Palezzo"
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <!--lneardateinformation-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/backlnear"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+
+            android:padding="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/iccalender"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <com.an.customfontview.CustomTextView
+
+                            app:textFontPath="fonts/gothamxlight.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start Date"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <com.an.customfontview.CustomTextView
+
+                        app:textFontPath="fonts/gothammediums.otf"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017-08-08"
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        android:id="@+id/startdate"
+
+                        android:layout_marginLeft="35dp"
+
+
+
+                        />
+
+                    <View
+                        android:layout_width="130dp"
+                        android:layout_height="0.1dp"
+                        android:background="#DDD"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        />
+                </LinearLayout>
+
+
+                <!--fjghsj                 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/iccalender"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <com.an.customfontview.CustomTextView
+
+                            app:textFontPath="fonts/gothamxlight.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End Date"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017-08-08"
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="35dp"
+                        android:id="@+id/enddate"
+
+
+
+
+                        app:textFontPath="fonts/gothammediums.otf"
+
+                        />
+                    <View
+                        android:layout_width="130dp"
+                        android:layout_height="0.1dp"
+                        android:background="#DDD"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.an.customfontview.CustomTextView
+
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item not Available on this date"
+                android:textSize="10dp"
+                android:textColor="#900"
+                android:visibility="gone"
+                android:id="@+id/errortanggal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+
+
+                >
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:id="@+id/latitudess"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+/>
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+android:visibility="gone"
+                    android:id="@+id/longitudess"
+                    android:layout_marginLeft="10dp"
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Jalan guntur no 15 babakan madang indonesia nogor"
+                    android:textSize="13dp"
+                    android:textColor="#000"
+                    android:id="@+id/location"
+
+
+                    android:layout_marginLeft="8dp"
+
+
+
+
+                    app:textFontPath="fonts/gothammediums.otf"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#DDD"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+
+
+                >
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Method"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rag_deliver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rad_delivered"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Deliver"/>
+
+                    <RadioButton
+                        android:id="@+id/rad_pickup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pick Up"/>
+                </RadioGroup>
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item not Available on this Delivery method"
+                    android:textSize="10dp"
+                    android:textColor="#900"
+                    android:id="@+id/errordeliver"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+                <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/framedriver"
+    >
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Include Driver"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rag_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rad_true"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Yes"/>
+
+                    <RadioButton
+                        android:id="@+id/rad_false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+</LinearLayout>
+                />
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item not Available on this method"
+                    android:textSize="10dp"
+                    android:textColor="#900"
+                    android:id="@+id/errordriver"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+
+                    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+
+    android:orientation="horizontal">
+                <com.an.customfontview.CustomTextView
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    app:textFontPath="fonts/gothammediums.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup"
+
+                    android:id="@+id/cdelivery"
+
+
+                    />
+                <com.an.customfontview.CustomTextView
+                    android:textColor="#000"
+                    android:textSize="10dp"
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:id="@+id/cvaluedelivery"
+
+
+                    />
+</LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="10dp"
+                    android:background="#EEE" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+
+
+                >
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup time"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+
+
+
+                    />
+
+                <com.an.customfontview.CustomEditText
+                    android:id="@+id/pictime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+android:editable="false"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:hint="Choose time"
+                    android:textColorHint="#000"
+
+                    android:textDirection="ltr"
+                    android:textSize="15dp"
+                    app:textFontPath="fonts/gothamxlight.otf" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="10dp"
+                    android:background="#EEE" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+
+
+                >
+                <com.an.customfontview.CustomTextView
+
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:layout_marginBottom="-10dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <com.an.customfontview.CustomEditText
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transparent"
+                    android:hint="Write your note"
+                    android:textColorHint="#000"
+                    android:textDirection="ltr"
+                    android:textSize="15dp"
+                    app:textFontPath="fonts/gothamxlight.otf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="10dp"
+                    android:background="#EEE" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <!--//recycelpricereq-->
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/framead"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/list_feature"
+                />
+            <com.an.customfontview.CustomTextView
+
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Additional Features"
+
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+
+
+                />
+
+
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical" />
+
+        <!-- INSURANCE -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/textasuransi"
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance"
+                android:textColor="#000"
+                android:textSize="17dp"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/textdescinsurance"
+                    app:textFontPath="fonts/gothamxlight.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance has been covered by Rentist"
+                    android:textColor="#000"
+                    android:textSize="13dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.an.customfontview.CustomTextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="130dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:text="Learn More"
+                        android:textStyle="bold"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        >
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. "
+                            android:layout_marginTop="9dp"
+                            android:layout_marginLeft="10dp"
+
+
+                            />
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            android:layout_marginTop="9dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10000"
+                            android:id="@+id/costinsurance"
+
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- END OF INSURANCE -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/coin_blue"
+                />
+            <com.an.customfontview.CustomTextView
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                app:textFontPath="fonts/gotham_bold.otf"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Cost"
+
+
+
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/cekvocer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <com.an.customfontview.CustomTextView
+                android:textColor="#000"
+                android:textSize="13dp"
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Voucher"
+                android:id="@+id/cekvouchernya"
+                android:layout_marginTop="9dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/framecekvouchernya"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+
+            <com.an.customfontview.CustomEditText
+                android:id="@+id/vouchercode"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:hint="Voucher Code"
+                android:textColorHint="#000"
+                android:textDirection="ltr"
+                android:textSize="13dp"
+                android:layout_alignParentLeft="true"
+                app:textFontPath="fonts/gothamxlight.otf" />
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#fff"
+                android:padding="10dp"
+                app:cardBackgroundColor="#99e52c"
+                android:orientation="horizontal"
+                android:id="@+id/getvoucher">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="25dp"
+            >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/deliverymethod_blue"
+                />
+            <com.an.customfontview.CustomTextView
+                android:textColor="#000000"
+                android:textSize="17dp"
+
+                app:textFontPath="fonts/gotham_bold.otf"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Delivery Method"
+
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/rag_trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/delivered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Deliver"/>
+                <RadioButton
+                    android:id="@+id/pickup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pickup"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCC"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.an.customfontview.CustomTextView
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gothamxlight.otf"
+                        android:layout_width="130dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="wrap_content"
+                        android:text="Cost Value List"
+                        android:textStyle="bold"
+
+
+                        />
+
+
+                    />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10000"
+                            android:id="@+id/totalcost"
+android:visibility="gone"
+
+                            />
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/totalcostrp"
+
+
+                            />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_pricereq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:scrollbars="vertical" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/framedelivery"
+                    >
+                    <com.an.customfontview.CustomTextView
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gothamxlight.otf"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Cost"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/valuedelivery"
+
+
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+                    <com.an.customfontview.CustomTextView
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gothamxlight.otf"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Feature Value"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/featurevalue"
+                            android:visibility="gone"
+
+
+                            />
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/featurevaluerp"
+
+
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/framevoucher"
+                    >
+
+                    <com.an.customfontview.CustomTextView
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        app:textFontPath="fonts/gothamxlight.otf"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Voucher Value"
+                        android:textStyle="bold"
+
+
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#C44"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:visibility="gone"
+                            android:id="@+id/valuevoucher"
+
+
+                            />
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#C44"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/valuevoucherrp"
+
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frameinsurance"
+                    >
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentTop="true"
+                        android:text="Insurance Value"
+                        android:textColor="#000"
+                        android:textSize="13dp"
+
+
+                        android:textStyle="bold"
+                        app:textFontPath="fonts/gothamxlight.otf" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. "
+
+                            android:layout_marginLeft="10dp"
+
+
+                            />
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#888"
+                            android:textSize="13dp"
+
+                            app:textFontPath="fonts/gothammediums.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12000"
+                            android:id="@+id/valueinsurance"
+
+
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        >
+
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="#000000"
+                            android:textSize="17dp"
+
+                            app:textFontPath="fonts/gotham_bold.otf"
+
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:textStyle="bold"
+
+
+                            />
+
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17dp"
+
+                            app:textFontPath="fonts/gotham_bold.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20.0000"
+                            android:visibility="gone"
+                            android:id="@+id/finalcost"
+
+
+                            />
+                        <com.an.customfontview.CustomTextView
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="17dp"
+
+                            app:textFontPath="fonts/gotham_bold.otf"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/finalcostrp"
+
+
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/scooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <com.an.customfontview.CustomTextView
+                android:textColor="#000"
+                android:textSize="13dp"
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find me replacement item if the order is rejected / not responded"
+
+
+                />
+
+
+
+
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/save"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#99e52c"
+
+            android:orientation="horizontal"
+            app:cardUseCompatPadding="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

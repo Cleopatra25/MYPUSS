@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.V2Profile"
+    android:background="#fff">
+<ScrollView
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:paddingBottom="60dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_grad"
+
+            >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+
+    >
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@color/colorWhite"
+    android:id="@+id/profileimage"
+    android:layout_marginRight="20dp"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+
+        >
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinbold.otf"
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="John Doe "
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+
+
+            />
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Basic"
+            android:id="@+id/badgetext"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+
+
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ID :08562595514215"
+            android:id="@+id/reftext"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_rentist_poin"
+                />
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/popinregural.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Point  : 1200000 "
+                android:id="@+id/pointext"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+android:layout_marginLeft="20dp"
+        android:id="@+id/accountsetting"
+    android:layout_marginTop="30dp"
+    >
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_accountsetting"
+        />
+    <com.an.customfontview.CustomTextView
+        app:textFontPath="fonts/popinregural.otf"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Account Settings "
+        android:gravity="center"
+
+        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp"
+
+
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/changepassword"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_changepass" />
+
+        <com.an.customfontview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Change Password"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            app:textFontPath="fonts/popinregural.otf"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/changeemailpass"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_changephone" />
+
+        <com.an.customfontview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Change Email / Phone Number"
+
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            app:textFontPath="fonts/popinregural.otf"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/verification"
+        android:layout_marginTop="30dp"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_verify"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Verification"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:id="@+id/garing"
+
+
+            />
+
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_warning"
+                android:layout_toRightOf="@+id/garing"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+android:id="@+id/sugesticon"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:id="@+id/documentmanager"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_docmanager"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Document Manager"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/address"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_address"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Address"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20sp"
+        android:background="#888"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/chat"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_chats"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chat"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/complaint"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_complain"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Complaint"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/inputsuggestion"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_inputsuggest"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Input And Suggestion"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/sign_outs"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_signout"
+            />
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sign Out"
+            android:gravity="center"
+
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:layout_alignParentBottom="true"
+android:background="@drawable/bg_menu"
+    ></RelativeLayout>
+<com.felix.bottomnavygation.BottomNav
+android:id="@+id/bottomNav"
+android:background="@color/transparent"
+android:layout_alignParentBottom="true"
+android:layout_width="match_parent"
+android:layout_height="60dp"/>
+
+
+    </RelativeLayout>

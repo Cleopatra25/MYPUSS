@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.fragment.CarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/intro_start_rent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/text_margin"
+            android:drawableStart="@drawable/ic_date_grey"
+            android:editable="false"
+            android:gravity="right|center_vertical"
+            android:hint="Pick date"
+            android:textDirection="ltr" />
+
+        <TextView
+            android:id="@+id/txt_car_warning1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please provide date."
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/trans_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:drawableStart="@drawable/ic_time_grey"
+            android:editable="false"
+            android:gravity="right"
+            android:hint="Pickup time" />
+
+        <TextView
+            android:id="@+id/txt_car_warning2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please provide time."
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent the car with a driver?"
+                android:textColor="@color/colorBlack87" />
+
+            <CheckBox
+                android:id="@+id/cbx_search_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_search_car"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:background="@color/colorPrimaryDark"
+            android:drawableStart="@drawable/i_car"
+            android:padding="12dp"
+            android:text="Search"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</FrameLayout>

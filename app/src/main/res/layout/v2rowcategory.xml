@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="0.5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/officeequipmen"
+            app:civ_border_width="2dp"
+            android:padding="4dp"
+            android:id="@+id/image_value"
+            app:civ_border_color="#DDD"/>
+
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_weight="1"
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Office"
+            android:textSize="12dp"
+            android:textColor="@color/grey_medium"
+
+
+            />
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/popinregural.otf"
+            android:layout_weight="1"
+            android:id="@+id/id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Office"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:textColor="@color/grey_medium"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

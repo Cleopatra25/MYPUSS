@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="Renter's contact"
+            style="@style/Title"
+            android:textColor="@color/colorBlack87"/>
+
+        <RadioGroup
+            android:id="@+id/rad_renter_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rad_renter_member">
+            <RadioButton
+                android:id="@+id/rad_renter_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Member" />
+            <RadioButton
+                android:id="@+id/rad_renter_guests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guests"/>
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin">
+            <EditText
+                android:id="@+id/edt_renter_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="First name"
+                android:text="Arif"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin">
+            <EditText
+                android:id="@+id/edt_renter_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Last name"
+                android:text="Widiyatmiko"
+                android:inputType="textCapSentences" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin">
+
+            <EditText
+                android:id="@+id/edt_renter_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:editable="false"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:text="081234234234" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin">
+            <EditText
+                android:id="@+id/edt_renter_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:editable="false"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text="arif@gmail.com" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin">
+            <EditText
+                android:id="@+id/edt_renter_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:editable="false"
+                android:hint="Age"
+                android:inputType="number"
+                android:text="41" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver has driver's license"/>
+
+            <CheckBox
+                android:id="@+id/cbx_renter_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layoutDirection="rtl"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_renter_notes"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="32dp"
+            android:hint="Notes (optional)"
+            android:gravity="top"/>
+    </LinearLayout>
+
+
+</ScrollView>

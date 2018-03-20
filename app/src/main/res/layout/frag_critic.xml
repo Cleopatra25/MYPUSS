@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:padding="@dimen/text_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/suggestionbanner"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.an.customfontview.CustomTextView
+                    app:textFontPath="fonts/gotham_bold.otf"
+                    android:id="@+id/model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IWe'd love to get your feedback"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/slight_margin"
+                    android:text="Asset Category"
+                    android:textColor="@color/colorBlack87"
+                    app:textFontPath="fonts/gothamxlight.otf" />
+
+                <Spinner
+                    android:id="@+id/spn_asset_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:entries="@array/asset_category_entries"
+                    android:padding="@dimen/slight_margin" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#919191" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gothamxlight.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/slight_margin"
+                android:text="Type"
+                android:textColor="@color/colorBlack87" />
+
+            <Spinner
+                android:id="@+id/spn_entry_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:padding="@dimen/slight_margin"
+                android:entries="@array/critic_suggest_entries" />
+
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#919191"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <com.an.customfontview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/slight_margin"
+                android:text="Title"
+                android:textColor="@color/colorBlack"
+                app:textFontPath="fonts/gothamxlight.otf" />
+
+            <EditText
+                android:id="@+id/edt_critic_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:ems="10"
+                android:hint="Critic title"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/slight_margin"
+                android:text="Description"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/edt_critic_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Your description"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="7" />
+
+        </LinearLayout>
+
+
+            <com.an.customfontview.CustomButton
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:id="@+id/btn_send"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/text_margin"
+                android:background="@color/green"
+                android:backgroundTint="@color/green"
+                android:text="Send"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

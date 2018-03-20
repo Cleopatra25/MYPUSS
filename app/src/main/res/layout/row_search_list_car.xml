@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/slight_margin"
+    android:layout_marginRight="@dimen/slight_margin"
+    android:layout_marginLeft="@dimen/slight_margin"
+    app:cardCornerRadius="4dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?android:colorBackground">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_list_car"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/shape_gradient"/>
+
+            <TextView
+                android:id="@+id/txt_list_car_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/slight_margin"
+                android:layout_marginRight="@dimen/slight_margin"
+                android:textColor="@color/colorWhite"
+                android:text="1,2 Km"
+                android:layout_gravity="right|top"/>
+
+            <TextView
+                android:id="@+id/txt_list_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/slight_margin"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="left|bottom"
+                android:textColor="@color/colorWhite"
+                style="@style/Body"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="Toyota Avanza"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/slight_margin"
+                android:orientation="horizontal"
+                android:layout_gravity="left|bottom">
+
+                <TextView
+                    android:id="@+id/txt_list_car_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/slight_margin"
+                    android:textColor="@color/colorWhite"
+                    android:text="2015"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/slight_margin"
+                    android:textColor="@color/colorWhite"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/txt_list_car_transmission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/slight_margin"
+                    android:textColor="@color/colorWhite"
+                    android:text="Manual"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_list_car_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="@dimen/slight_margin"
+                android:textColor="@color/colorWhite"
+                android:text="Kabupaten Badung"
+                android:layout_gravity="top|right"/>
+
+            <TextView
+                android:id="@+id/txt_list_car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/slight_margin"
+                android:layout_marginBottom="@dimen/slight_margin"
+                android:textColor="@color/colorWhite"
+                android:text="Rp 400K"
+                android:layout_gravity="right|bottom"/>
+        </FrameLayout>
+
+        <!--<View
+            style="@style/Divider" />-->
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

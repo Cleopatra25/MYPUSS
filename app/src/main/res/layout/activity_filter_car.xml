@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2d2d2"
+    tools:context="id.rentist.rentist.activity.FilterCarActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingBottom="50dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="@dimen/xmin_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/min_padding"
+                    android:paddingStart="@dimen/card_padding_left"
+                    android:paddingTop="@dimen/card_padding_top"
+                    android:paddingBottom="@dimen/med_padding">
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date &amp; Location"
+                        android:textColor="@color/colorTextBlue"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/med_padding"/>
+
+                    <RadioGroup
+                        android:id="@+id/rag_transs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/min_padding"
+                        android:layout_marginBottom="@dimen/card_padding">
+
+                        <RadioButton
+                            android:id="@+id/rad_delivered"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Deliver"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_pickup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pick Up" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/card_padding"
+                        android:layout_marginBottom="@dimen/med_padding">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_pickup" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/xmin_padding">
+
+                            <com.an.customfontview.CustomTextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/min_padding"
+                                android:editable="false"
+                                android:text="Pick Location"
+                                android:textColor="#919191"
+                                android:textSize="@dimen/usmall_text"
+                                app:textFontPath="fonts/gotham_bold.otf" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="@dimen/xmin_padding"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="@dimen/xmin_padding"
+                                android:background="#CCC" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/card_padding"
+                        android:layout_marginBottom="@dimen/med_padding"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_cal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/xmin_padding">
+
+                            <com.an.customfontview.CustomTextView
+                                android:id="@+id/customTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/min_padding"
+                                android:text="Rent Date"
+                                android:visibility="gone"
+                                android:textSize="@dimen/usmall_text"
+                                app:textFontPath="fonts/gothamxlight.otf" />
+
+                            <com.an.customfontview.CustomEditText
+                                android:id="@+id/search_start_rents"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:editable="false"
+                                android:textColorHighlight="#000"
+                                android:textColorHint="#919191"
+                                android:textDirection="ltr"
+                                android:textSize="15dp"
+                                android:hint="Rent Date"
+                                android:visibility="gone"
+                                android:paddingEnd="@dimen/card_padding"
+                                android:layout_marginLeft="@dimen/min_padding"
+                                app:textFontPath="fonts/gothamxlight.otf" />
+
+                            <com.an.customfontview.CustomTextView
+                                android:id="@+id/search_start_rent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/min_padding"
+                                android:editable="false"
+                                android:text="Rent Date"
+                                android:textColor="#919191"
+                                android:textSize="@dimen/usmall_text"
+                                app:textFontPath="fonts/gotham_bold.otf" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="@dimen/xmin_padding"
+                                android:layout_marginTop="@dimen/xmin_padding"
+                                android:background="#CCC" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/card_padding">
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <com.an.customfontview.CustomTextView
+                            android:id="@+id/titleincluded"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Include Driver"
+                            android:textColor="#000"
+                            android:layout_marginLeft="@dimen/xmin_padding"
+                            android:textSize="@dimen/usmall_text"
+                            app:textFontPath="fonts/gothamxlight.otf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="@dimen/xmin_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/min_padding"
+                    android:paddingLeft="@dimen/card_padding_left"
+                    android:paddingTop="@dimen/card_padding_top"
+                    android:paddingBottom="@dimen/med_padding">
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transmission"
+                        android:textColor="@color/colorTextBlue"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/med_padding"/>
+
+                    <RadioGroup
+                        android:id="@+id/rag_trans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/min_padding"
+                        android:layout_marginBottom="@dimen/card_padding">
+
+                        <RadioButton
+                            android:id="@+id/rad_filter_trans_all"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="All"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_filter_trans_manual"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Manual"/>
+                        <RadioButton
+                            android:id="@+id/rad_filter_trans_automatic"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Automatic"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="@dimen/xmin_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/card_padding_left"
+                    android:paddingTop="@dimen/card_padding_top"
+                    android:paddingBottom="@dimen/med_padding"
+                    android:layout_marginEnd="@dimen/min_padding">
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Car Type"
+                        android:textColor="@color/colorTextBlue"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/med_padding"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/min_padding"
+                        android:paddingStart="@dimen/min_padding">
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/cbx_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="City"/>
+
+                            <CheckBox
+                                android:id="@+id/cbx_family"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Family" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/cbx_sedan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Sedan" />
+
+                            <CheckBox
+                                android:id="@+id/cbx_classic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:maxHeight="50dp"
+                                android:text="Classic"/>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/cbx_luxury"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Luxury"/>
+
+                            <CheckBox
+                                android:id="@+id/jeep"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Jeep"/>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/cbx_pickup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Pickup" />
+
+
+                            <CheckBox
+                                android:id="@+id/box"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Box" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="@dimen/xmin_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/card_padding_left"
+                    android:paddingTop="@dimen/card_padding_top"
+                    android:paddingBottom="@dimen/med_padding"
+                    android:layout_marginEnd="@dimen/min_padding">
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Seats"
+                        android:textColor="@color/colorTextBlue"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/med_padding"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_seats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/filter_car_seats"
+                        android:spinnerMode="dropdown"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/xmin_padding"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="@dimen/xmin_padding"
+                        android:background="#CCC" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="@dimen/xmin_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/card_padding_left"
+                    android:paddingTop="@dimen/card_padding_top"
+                    android:paddingBottom="@dimen/med_padding"
+                    android:layout_marginEnd="@dimen/min_padding">
+
+                    <com.an.customfontview.CustomTextView
+                        app:textFontPath="fonts/gotham_bold.otf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Features"
+                        android:textColor="@color/colorTextBlue"
+                        android:textSize="@dimen/small_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/med_padding"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/min_padding"
+                        android:paddingStart="@dimen/min_padding">
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/cbx_ac"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Air Conditioner" />
+
+                            <CheckBox
+                                android:id="@+id/cbx_air_bag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Air Bag" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_filter_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="apply"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="-10dp"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:src="@drawable/iccalender"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_margin="5dp"-->
+    <!--&gt;-->
+    <!--<com.an.customfontview.CustomTextView-->
+
+    <!--app:textFontPath="fonts/gothamxlight.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="End Date"-->
+    <!--android:layout_marginBottom="-10dp"-->
+    <!--android:textSize="10dp"-->
+
+    <!--/>-->
+    <!--<com.an.customfontview.CustomEditText-->
+    <!--android:id="@+id/search_end_rent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:editable="false"-->
+
+    <!--android:textSize="15dp"-->
+    <!--android:background="@color/transparent"-->
+    <!--android:textColorHint="#DDD"-->
+    <!--android:textDirection="ltr"-->
+    <!--app:textFontPath="fonts/gothamxlight.otf"-->
+    <!--/>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginTop="-10dp"-->
+    <!--android:background="#CCC" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<View
+        style="@style/Divider"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:text="Price Range"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/seekbar_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin">
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:absoluteMaxValue="1500000"
+            app:absoluteMinValue="100000" />
+
+    </LinearLayout>-->
+    <!--<View-->
+    <!--style="@style/Divider"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"-->
+    <!--android:text="Type"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="18sp" />-->
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TableRow android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_classic"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:maxHeight="50dp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Classic"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_pickup"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Pickup"-->
+    <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_city"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="City"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_sedan"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Sedan"-->
+    <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_luxury"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Luxury"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_family"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Family"-->
+    <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/jeep"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Jeep"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/box"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Box"-->
+    <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/truck"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Truck"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/bus"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Bus"-->
+    <!--/>-->
+    <!--</TableRow>-->
+    <!--</TableLayout>-->
+    <!--<View-->
+    <!--style="@style/Divider"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/textView8"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"-->
+    <!--android:text="Number of seats"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"-->
+    <!--android:layoutDirection="rtl">-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/rag_seats"-->
+    <!--android:checkedButton="@+id/radioButton"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" >-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_all"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:checked="true"-->
+    <!--android:text="All" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_two"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="2 seats min." />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_three"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="3 seats min." />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_four"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="4 seats min." />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_five"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="5 seats min." />-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_six"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="6 seats min." />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_seven"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="7 seats min." />-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_eight"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="8 seats min." />-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_ten"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="10 seats min." />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rad_seats_eleven"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="12 seats min." />-->
+    <!--</RadioGroup>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+    <!--style="@style/Divider"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"-->
+    <!--android:text="Features"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginLeft="@dimen/text_margin"-->
+    <!--android:layout_marginRight="@dimen/text_margin"-->
+    <!--android:layout_marginTop="@dimen/text_margin"-->
+    <!--android:layout_marginBottom="?attr/actionBarSize">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_ac"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Air Conditioner"-->
+    <!--android:layoutDirection="rtl"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_driver"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="With Driver"-->
+    <!--android:layoutDirection="rtl"/>-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cbx_air_bag"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height
+    ="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/spacing_middle"-->
+    <!--android:text="Air Bag"-->
+    <!--android:layoutDirection="rtl"/>-->
+    <!--</LinearLayout>-->

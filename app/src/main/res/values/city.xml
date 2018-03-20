@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This list is fixed, should not be changed unless you fixed all classes that are using these.-->
+<resources>
+    <string-array name="city">
+        <!--<item>Bali</item>-->
+        <item>Bogor</item>
+        <item>Jakarta</item>
+        <item>Depok</item>
+        <item>Tangerang</item>
+        <item>Bekasi</item>
+    </string-array>
+
+    <string-array name="filter">
+        <!--<item>Bali</item>-->
+        <item>Bogor</item>
+        <item>Jakarta</item>
+        <item>Depok</item>
+        <item>Tangerang</item>
+        <item>Bekasi</item>
+    </string-array>
+
+    <string-array name="shortby">
+        <!--<item>Bali</item>-->
+        <item>short by</item>
+        <item>Name</item>
+        <item>Price</item>
+
+    </string-array>
+</resources>

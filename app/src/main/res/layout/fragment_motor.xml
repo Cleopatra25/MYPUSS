@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.fragment.MotorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/intro_start_rent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/text_margin"
+            android:editable="false"
+            android:drawableStart="@drawable/ic_date_grey"
+            android:gravity="right|center_vertical"
+            android:hint="Start Rent"
+            android:textDirection="ltr" />
+
+        <!--<EditText
+            android:id="@+id/intro_end_rent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:drawableStart="@drawable/ic_date_grey"
+            android:layout_marginTop="@dimen/text_margin"
+            android:editable="false"
+            android:hint="End Rent"
+            android:textDirection="ltr"/>-->
+
+        <EditText
+            android:id="@+id/trans_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:editable="false"
+            android:hint="Pickup time"
+            android:drawableStart="@drawable/ic_time_grey"
+            android:gravity="right"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_search_motor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:drawableStart="@drawable/i_motor"
+            android:padding="12dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:text="Search"/>
+    </LinearLayout>
+</FrameLayout>

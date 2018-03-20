@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="180dp"
+            android:layout_margin="@dimen/spacing_middle"
+            android:src="@drawable/ssempat"/>
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gotham_bold.otf"
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Give Us Feedback"
+            android:textColor="#fff"
+            android:textSize="25dp"
+
+
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            >
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gothammediums.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="don't forget to write"
+                android:textColor="@android:color/white"
+
+                android:textSize="18dp"/>
+
+
+
+            <com.an.customfontview.CustomTextView
+                app:textFontPath="fonts/gotham_bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testimonial"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/slight_margin"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--<item
+            android:id="@+id/nav_city"
+            android:icon="@drawable/ic_city"
+
+            android:title="Select City" />-->
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/mhome"
+            android:title="Home" />
+        </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/mlogin"
+            android:title="Log in" />
+        </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/mprofile"
+            android:title="Profile" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_rewards"
+            android:icon="@drawable/mcoin"
+            android:title="Poin" />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/mtransaction"
+            android:title="Transaction History" />
+    </group>
+      <group android:id="@+id/grp7" android:checkableBehavior="single" android:visible="false">
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/mcomplain"
+            android:title="Complain" />
+
+       </group>
+    <group android:id="@+id/grp8" android:checkableBehavior="single" >
+    <item
+            android:id="@+id/nav_critic"
+            android:icon="@drawable/mcritic"
+            android:title="Critics and Suggestions" />
+     </group>
+    <group android:id="@+id/grp9" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/mshare"
+            android:title="Share" />
+    </group>
+    <group android:id="@+id/grp10" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/mabout"
+            android:title="About Us" />
+    </group>
+
+</menu>

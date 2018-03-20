@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.V2DetailAsset">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/backimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_arrow_left_dark" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_cart_primary" />
+            </RelativeLayout>
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="5dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"></com.synnapps.carouselview.CarouselView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/heart_inactive"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_heart"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/heart_active"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_heart_red"
+                    android:visibility="gone"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/category_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="City Car"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    app:textFontPath="fonts/popinbold.otf"
+
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/long_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="106.802321"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:textFontPath="fonts/popinbold.otf"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:id="@+id/lat_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="-6.584201"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:textFontPath="fonts/popinbold.otf"
+
+
+
+                    />
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/t_cleanliness_rating"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srb_rating="5"
+
+                    app:srb_starSize="15dp" />
+
+            </RelativeLayout>
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="Honda Brio Automatic 2017 -  Merah"
+                android:textColor="@color/colorBlack87"
+                android:textSize="20dp"
+                app:textFontPath="fonts/popinbold.otf"
+
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+
+
+                    >
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/patnername_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="Dadang Noob"
+                        android:textColor="@color/colorBlack87"
+                        android:textSize="16dp"
+                        app:textFontPath="fonts/popinregural.otf"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/address_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Melberg ,jl May Jend HE Sukma bogor ,2017,indonesia "
+                        android:textColor="@color/colorBlack87"
+                        android:textSize="16dp"
+                        app:textFontPath="fonts/popinregural.otf"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/seelink_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="See on Map"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        app:textFontPath="fonts/popinbold.otf"
+
+
+                        />
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imagepatrner_value"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_profile_active_btm"
+                    app:civ_border_color="#DDD"
+                    app:civ_border_width="2dp" />
+
+            </RelativeLayout>
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/description_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="ini adalah mobil honda ko bukan motor trial , coba tebak ada berapa ban mobiol honda ini"
+                android:textColor="@color/colorBlack87"
+                android:textSize="16dp"
+                app:textFontPath="fonts/popinregural.otf"
+
+
+                />
+
+
+            <!--<HorizontalScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:scrollbars="none"-->
+            <!--android:padding="5dp"-->
+            <!--android:background="@color/green"-->
+
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Automatic"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="4 seat"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Automatic"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="pertalite"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Automatic"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/ic_kosong"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+
+
+            <!--/>-->
+
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Automatic"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/colorWhite"-->
+
+
+            <!--/>-->
+
+                    <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--</HorizontalScrollView>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleattribut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/green" />
+
+            <com.an.customfontview.CustomTextView
+                android:id="@+id/seedetail_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="See Detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                app:textFontPath="fonts/popinbold.otf"
+
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/garisaditional"
+                android:background="@color/grey_soft" />
+
+
+            <LinearLayout
+                android:id="@+id/framead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Additonal Feature"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+                    app:textFontPath="fonts/popinbold.otf"
+
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclefeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/garisdestination"
+                android:background="@color/grey_soft" />
+
+            <LinearLayout
+                android:id="@+id/framedestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Destination Package"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+                    app:textFontPath="fonts/popinbold.otf"
+
+                    />
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Rent by destination package"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/popinregural.otf"
+
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycledestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+
+
+            <!--&gt;-->
+            <!--<ImageView-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/ic_dot"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="Baby Seat"-->
+            <!--android:textColor="@color/colorBlack87"-->
+            <!--android:textSize="14dp"-->
+
+
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/ic_dot"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+            <!--app:textFontPath="fonts/popinregural.otf"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="Baby Seat"-->
+            <!--android:textColor="@color/colorBlack87"-->
+            <!--android:textSize="14dp"-->
+
+
+            <!--/>-->
+
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+
+
+            <!--&gt;-->
+            <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/ic_dot"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                    <!--app:textFontPath="fonts/popinregural.otf"-->
+                    <!--android:layout_width="140dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Baby Seat"-->
+                    <!--android:textColor="@color/colorBlack87"-->
+                    <!--android:textSize="14dp"-->
+
+
+                    <!--/>-->
+
+            <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/ic_dot"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                    <!--app:textFontPath="fonts/popinregural.otf"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Baby Seat"-->
+                    <!--android:textColor="@color/colorBlack87"-->
+                    <!--android:textSize="14dp"-->
+
+
+                    <!--/>-->
+
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+
+
+            <!--&gt;-->
+            <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/ic_dot"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                    <!--app:textFontPath="fonts/popinregural.otf"-->
+                    <!--android:layout_width="140dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Baby Seat"-->
+                    <!--android:textColor="@color/colorBlack87"-->
+                    <!--android:textSize="14dp"-->
+
+
+                    <!--/>-->
+
+            <!--<ImageView-->
+                    <!--android:layout_width="15dp"-->
+                    <!--android:layout_height="15dp"-->
+                    <!--android:src="@drawable/ic_dot"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--/>-->
+
+            <!--<com.an.customfontview.CustomTextView-->
+                    <!--app:textFontPath="fonts/popinregural.otf"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="Baby Seat"-->
+                    <!--android:textColor="@color/colorBlack87"-->
+                    <!--android:textSize="14dp"-->
+
+
+                    <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grey_soft" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="Driver"
+                        android:textColor="@color/colorBlack87"
+                        android:textSize="14dp"
+                        app:textFontPath="fonts/popinregural.otf"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/driver_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:text="Available"
+                        android:textColor="@color/green"
+                        android:textSize="18dp"
+                        app:textFontPath="fonts/popinbold.otf"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="Drivery Method"
+                        android:textColor="@color/colorBlack87"
+                        android:textSize="14dp"
+                        app:textFontPath="fonts/popinregural.otf"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/deliverymethod_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:text="Deliver / Pick Up"
+                        android:textColor="@color/green"
+                        android:textSize="18dp"
+                        app:textFontPath="fonts/popinbold.otf"
+
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grey_soft"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview_termandcondition"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview_insurance"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        app:cardBackgroundColor="@color/color_red"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="#fff"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.an.customfontview.CustomTextView
+                        android:id="@+id/price_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="Rp.200.000.000"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp"
+                        app:textFontPath="fonts/popinbold.otf"
+
+
+                        />
+
+                    <com.an.customfontview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text=" / Day"
+                        android:textColor="@color/colorBlack54"
+                        android:textSize="14dp"
+                        app:textFontPath="fonts/popinregural.otf"
+
+
+                        />
+                </LinearLayout>
+
+                <com.an.customfontview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="4dp"
+                    android:text="minimum Renr - 1 day"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"
+                    app:textFontPath="fonts/popinregural.otf"
+android:id="@+id/minimum_value"
+
+                    />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <com.an.customfontview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="4dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="4dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Check Availability"
+        android:textColor="@color/colorWhite"
+        android:textSize="13dp"
+        app:textFontPath="fonts/popinbold.otf"
+
+
+        />
+
+</LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_grad"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/framenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingTop="@dimen/xlar_padding"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="P H O N E"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/curr_phone"
+                    android:layout_marginTop="@dimen/smed_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    tools:text="Current Phone : 628568446489"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="@dimen/small_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/min_padding"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/xmin_padding"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@color/grey_soft"
+                        app:ccp_defaultNameCode="ID"
+                        app:ccp_showFlag="true" />
+
+                    <EditText
+                        android:id="@+id/cpe_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/country_code"
+                        android:backgroundTint="@color/colorBlack54"
+                        android:hint="P H O N E  N U M B E R"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:textColor="@color/colorBlack87"
+                        android:textColorHint="@color/colorBlack54" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_submit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_smedium_height"
+                    android:layout_marginEnd="@dimen/xlar_padding"
+                    android:layout_marginStart="@dimen/xlar_padding"
+                    android:background="@color/colorPrimary"
+                    android:text="Change Phone Number"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/smed_padding"
+                    android:text="Invalid Phone Number"
+                    android:visibility="gone"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/small_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="@dimen/xlar_padding"
+                android:id="@+id/frameemail">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="E M A I L"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="@dimen/large_text" />
+
+                <TextView
+                    android:id="@+id/curr_email"
+                    android:layout_marginTop="@dimen/smed_padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    tools:text="Current Email : norgroho.3p@gmail.com"
+                    android:textColor="@color/colorBlack87"
+                    android:textSize="@dimen/small_text" />
+
+                <EditText
+                    android:id="@+id/cpe_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Y O U R  E M A I L"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/min_padding"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/xmin_padding"
+                    android:layout_marginBottom="@dimen/min_padding" />
+
+                <Button
+                    android:id="@+id/btn_submit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_smedium_height"
+                    android:layout_marginEnd="@dimen/xlar_padding"
+                    android:layout_marginStart="@dimen/xlar_padding"
+                    android:background="@color/colorPrimary"
+                    android:text="Change Email"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/smed_padding"
+                    android:text="Invalid Email"
+                    android:visibility="gone"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

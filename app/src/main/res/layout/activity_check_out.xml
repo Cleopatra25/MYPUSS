@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.CheckOutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_centerHorizontal="true"
+                android:text="Nama aset"
+                style="@style/Headline"
+                android:textColor="@color/colorBlack87"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?actionBarSize"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/checkout_start_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_date_grey"
+                    android:gravity="right|center_vertical"
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:hint="Start date"
+                    android:textDirection="ltr"/>
+
+                <EditText
+                    android:id="@+id/checkout_end_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_date_grey"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:editable="false"
+                    android:hint="End date"
+                    android:gravity="right"/>
+
+                <EditText
+                    android:id="@+id/checkout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:editable="false"
+                    android:hint="Pickup time"
+                    android:drawableStart="@drawable/ic_time_grey"
+                    android:gravity="right"/>
+
+                <EditText
+                    android:id="@+id/checkout_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:editable="false"
+                    android:hint="Location"
+                    android:drawableStart="@drawable/ic_location_grey"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginBottom="@dimen/slight_margin"
+                    android:text="Additional Features"
+                    style="@style/SubHeading" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_add_features"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="72dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@color/colorPrimaryDark"
+        android:text="back"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="next"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

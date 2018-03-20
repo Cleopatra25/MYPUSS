@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.V2_Filter_Asset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentLeft="true"
+
+
+
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_filter_primary"
+
+        />
+    <com.an.customfontview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Filter"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
+        app:textFontPath="fonts/popinbold.otf"
+
+        />
+
+
+</LinearLayout>
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_close_grey"
+    android:layout_marginRight="10dp"
+android:id="@+id/closeframe"
+    android:layout_alignParentRight="true"
+    />
+
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_marginTop="20dp"
+
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textColorHint="@color/colortree"
+        android:hint="Start Date"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+        <com.an.customfontview.CustomEditText
+            android:id="@+id/startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/colortree"
+
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colortree"
+            android:textColorHint="@color/colortree"
+            android:textSize="15dp"
+            app:textFontPath="fonts/popinmedium.otf" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_left_arrow_right"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textColorHint="@color/colortree"
+        android:hint="End Date"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+        <com.an.customfontview.CustomEditText
+            android:id="@+id/enddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/colortree"
+
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colortree"
+            android:textColorHint="@color/colorBlack54"
+            android:textSize="15dp"
+            app:textFontPath="fonts/popinmedium.otf" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+        <com.an.customfontview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:text="Select City"
+
+
+            android:textColor="@color/colorBlack87"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            app:textFontPath="fonts/popinregural.otf" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spn_city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        app:hintText="All CITY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colortree" />
+    <com.an.customfontview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Short By"
+
+        android:textColor="@color/colorBlack87"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        app:textFontPath="fonts/popinregural.otf" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spn_short"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+
+        app:hintText="Short By"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colortree" />
+
+    <com.an.customfontview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price Range"
+        android:textColor="@color/colorBlack87"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        app:textFontPath="fonts/popinregural.otf" />
+    <!--<com.appyvet.materialrangebar.RangeBar-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:mrb_pinMaxFont="10sp"-->
+        <!--app:mrb_rangeBarPaddingBottom="12dp"-->
+        <!--app:mrb_selectorBoundaryColor="@color/colorPrimary"-->
+        <!--app:mrb_selectorBoundarySize="2dp"-->
+        <!--app:mrb_pinTextColor="@color/colorPrimary"-->
+        <!--app:mrb_selectorSize="10dp"-->
+        <!--app:mrb_tickEnd="10"-->
+        <!--app:mrb_tickInterval="10000"-->
+        <!--app:mrb_tickStart="5"/>-->
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/colorPrimary"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            >
+
+            <com.an.customfontview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                app:textFontPath="fonts/popinbold.otf" />
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

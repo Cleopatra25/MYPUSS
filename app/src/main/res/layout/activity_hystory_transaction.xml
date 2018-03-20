@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rentist.rentist.activity.Hystory_transaction">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/pagekosong"
+
+        >
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:src="@drawable/avadefault"
+            android:layout_gravity="center"
+            />
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gotham_bold.otf"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/slight_margin"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="We are sorry "
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.an.customfontview.CustomTextView
+            app:textFontPath="fonts/gothammediums.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/slight_margin"
+            android:gravity="center"
+            android:text="You don't any transaction yet"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/pagelinear"
+        >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_menu"
+        ></RelativeLayout>
+    <com.felix.bottomnavygation.BottomNav
+        android:id="@+id/bottomNav"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>
